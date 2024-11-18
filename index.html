@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Exercise 9</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav area -->
+    <header class="dark-background">
+      <img src="./images/logo.png" alt="Logo" />
+      <nav>
+        <div class="login-hidden">
+          <a class="button" href="">LOG IN</a>
+        </div>
+        <div class="wrapper">
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+
+    <main>
+      <!-- HERO area -->
+      <section class="hero dark-background">
+        <div class="content-width">
+          <h1>Nicole Cahoon</h1>
+          <p>Chartered Professional Accountant</p>
+        </div>
+      </section>
+
+      <!-- BENEFITS area -->
+      <section class="content-width benefits">
+        <div class="benefits_left">
+          <h2>Design Faster</h2>
+          <div class="benefits_imgmobile">
+            <img src="./images/background.png" alt="benefits4" />
+          </div>
+          <div class="circle-text-container-hidden">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat incididunt ut laboret.
+            </p>
+          </div>
+          <div class="circle-text-container">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat incididunt.
+            </p>
+          </div>
+          <div class="benefits_left_1">
+            <img src="./images/background.png" alt="benefits1" />
+            <h3>Great UI Kit</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+          <div class="benefits_left_2">
+            <img src="./images/background.png" alt="benefits2" />
+            <h3>100+ layouts</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+          <div class="benefits_left_3">
+            <img src="./images/background.png" alt="benefits3" />
+            <h3>19 categories</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+          </div>
+        </div>
+
+        <div class="benefits_right">
+          <img src="./images/background.png" alt="benefits4" />
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS area -->
+      <section class="content-width testimonials">
+        <h2>Why people love Form</h2>
+        <div class="testimonials_3style">
+          <div class="testimonials_1">
+            <img src="./images/Avatar.svg" alt="avatar1" />
+            <div class="circle-text-container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliquat enim
+                ad
+              </p>
+            </div>
+            <h3>Sean Farmer</h3>
+            <p>Job title</p>
+          </div>
+          <div class="testimonials_2">
+            <img src="./images/Avatar.svg" alt="avatar2" />
+            <div class="circle-text-container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliquat enim
+                ad minim veniam.
+              </p>
+            </div>
+            <h3>Sean Farmer</h3>
+            <p>Job title</p>
+          </div>
+          <div class="testimonials_3">
+            <img src="./images/Avatar.svg" alt="avatar3" />
+            <div class="circle-text-container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliquat enim
+                ad minim veniam.
+              </p>
+            </div>
+            <h3>Sean Farmer</h3>
+            <p>Job title</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION area -->
+      <section class="calltoactions dark-background">
+        <h2>Start using Form today</h2>
+        <div class="circle-text-container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.
+          </p>
+        </div>
+        <div class="circle-text-container-hidden">
+          <p>
+            Your information is secure and encrypted, consectetur adipisicing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliquat enim ad minim.
+          </p>
+        </div>
+        <a class="button" href="#">DOWNLOAD</a>
+      </section>
+    </main>
+
+    <!-- FOOTER area -->
+    <footer>
+      <div class="content-width footertop">
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">FEATURES</a></li>
+          <li><a href="">PRICING</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="footerbottom">
+        <p>©2018 - Form | All right reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,552 @@
+/*-------- GLOBAL STYLES ---------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  color: #a1aeb7;
+  line-height: 1.5;
+}
+
+
+/*-------- TYPOGRAPHY ---------*/
+h1 {
+  font-size: 3.8rem;
+  color: #505d68;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  color: #424b5a;
+  display: block;
+  margin: 16px 0;
+  padding: 12px 48px;
+}
+
+a.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #424b5a;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 26px 0;
+}
+
+/* Add h2 common styles */
+h2{
+  font-size:48px;  
+  font-weight:bold;
+  color:#424B5A;
+}
+
+/* Add a container style for circle sentenses*/
+.circle-text-container{
+  width:90%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/*-------- UTILITY ---------*/
+/* these CSS properties have been sepearated into individual style rules so that you can apply them to multiple blocks of content */
+
+.content-width {
+  width: 334px;
+  margin: auto;
+}
+
+.dark-background {
+  background-color: #f2f5f7;
+}
+
+/*-------- HEADER ---------*/
+header{
+  padding: 0 16px;
+}
+header .toggle{
+  margin:0px;
+  padding-right:1%;
+}
+nav {
+  text-align: right;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+nav ul li a{
+  text-decoration: none;
+  text-align: end;
+  margin:0px;
+  padding:0px;
+  font-size: 0.8rem;
+}
+.show-items{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+}
+header img{
+  position: absolute;
+  margin: 2%;
+}
+nav .login-hidden{
+  display:none;
+}
+
+
+/*-------- FOOTER ---------*/
+footer .footertop{
+  text-align: center;
+}
+footer .footertop ul{
+  list-style-type: none;
+  padding:0px;
+}
+footer .footertop ul a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+footer .footerbottom{
+  border-top:1px solid #C2D1D9;
+  text-align: center;
+}
+
+
+/*-------- HERO ---------*/
+section.hero {
+  background-image: url("images/hero.jpg");
+  background-position: bottom right;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100vh;
+  padding: 56px 0;
+}
+
+
+/*-------- benefit ---------*/
+.benefits{
+  display:flex;
+} 
+.benefits .benefits_left{
+  width:90%;
+  justify-content: center;
+  text-align: center;
+  margin:5%;
+}
+.benefits .benefits_left h2{
+  font-size: 3.6rem;
+}
+
+.benefits .benefits_left .circle-text-container p {
+  text-align: center;
+  padding:10px;
+}
+.benefits .benefits_left .circle-text-container-hidden{
+  display: none;
+}
+
+.benefits .benefits_left img{
+  width:15%;
+  background-color:#f2f5f7;
+  border: 1px solid #a1aeb7;
+}
+.benefits .benefits_left .benefits_imgmobile img{
+  width:100%;
+}
+
+.benefits .benefits_left .benefits_left_1{
+  flex: 1;
+}
+.benefits .benefits_left .benefits_left_1 h3{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.benefits .benefits_left .benefits_left_1 p{
+  padding:0% 25% 5% 25%;
+  margin-top:0px;
+}
+
+.benefits .benefits_left .benefits_left_2{
+  flex: 1;
+}
+.benefits .benefits_left .benefits_left_2 h3{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.benefits .benefits_left .benefits_left_2 p{
+  padding:0% 25% 5% 25%;
+  margin-top:0px;
+}
+
+.benefits .benefits_left .benefits_left_3{
+  flex: 1;
+}
+.benefits .benefits_left .benefits_left_3 h3{
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.benefits .benefits_left .benefits_left_3 p{
+  padding:0% 25% 5% 25%;
+  margin-top:0px;
+}
+
+.benefits .benefits_right{
+  display:none;
+  width: 100%;
+}
+.benefits .benefits_right img{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color:#f2f5f7;
+  border: 1px solid #a1aeb7;
+}
+
+
+/*-------- Testimonials-Tablet-1 ---------*/
+.testimonials h2{
+  text-align: center;
+  font-size: 3.6rem;
+  width:90%;
+  margin:auto;
+  padding:10%;
+}
+.testimonials h3{
+  color:#505D68;
+  margin-top: 0px;
+}
+.testimonials .testimonials_3style{
+  width:100%;
+  text-align: center;
+  letter-spacing: var(--unnamed-character-spacing-0);
+}
+.testimonials .testimonials_3style img{
+  width:50%;
+}
+.testimonials .testimonials_3style h3{
+  margin-bottom:0px;
+}
+.testimonials .testimonials_3style p{
+  margin-top:0px;
+}
+.testimonials .circle-text-container{
+  margin: auto;
+}
+
+
+/*-------- Call to actions - Desktop - 1 ---------*/
+.calltoactions{
+  text-align: center;
+  padding:3%;
+}
+.calltoactions h2{
+  font-size: 3.6rem;
+  margin:auto;
+  padding:10%;
+}
+.calltoactions .circle-text-container{
+  margin: auto;
+  padding: 0% 5% 0% 5%;
+}
+.calltoactions .circle-text-container-hidden{
+  display: none;
+}
+
+
+/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .content-width {
+    width: 690px;
+  }
+
+  /* MEDIUM HERO */
+  section.hero {
+    background-size: auto 40%;
+    padding: 104px 0;
+  }
+  section.hero p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+
+  /* MEDIUM HEADER */
+  nav{
+    display:flex;
+    justify-content: flex-end;
+  }
+  nav ul li.login{
+    display:none;
+  }
+  nav .login-hidden{
+    display:block;
+    width:80%;
+  } 
+  nav .login-hidden a{
+    margin-top:10px;
+    margin-bottom:0px;
+  } 
+
+
+  /* MEDIUM BENEFITS */
+  .benefits{
+    display:flex;
+    flex-direction: column;
+  }
+  .benefits .benefits_imgmobile{
+    display:none;
+  }
+  .benefits .benefits_right{
+    display:block;
+  }
+  .benefits .circle-text-container{
+    display: none;
+  }
+  .benefits .benefits_left .circle-text-container-hidden{
+    display: block;
+    padding: 0px;
+  }
+
+  .benefits .benefits_left{
+    margin:0px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .benefits .benefits_left .benefits_left_1{
+    flex: 1;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .benefits .benefits_left .benefits_left_2{
+    flex: 1;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .benefits .benefits_left .benefits_left_3{
+    flex: 1;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .benefits .benefits_left .benefits_left_1 p{
+    padding:0px;
+  }
+  .benefits .benefits_left .benefits_left_2 p{
+    padding:0px;
+  }
+  .benefits .benefits_left .benefits_left_3 p{
+    padding:0px;
+  }
+
+  /* MEDIUM TESTIMONIALS */
+  .testimonials{
+    display:flex;
+    flex-direction: column;
+  }
+  .testimonials h2{
+    align-content:center;
+    text-align: center;
+  }
+  .testimonials h3{
+    color:#505D68;
+  }
+  .testimonials .testimonials_3style{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+  .testimonials .testimonials_3style img{
+    width:50%;
+  }
+  .testimonials .testimonials_3style h3{
+    margin-bottom:0px;
+  }
+  .testimonials .testimonials_3style p{
+    margin-top:0px;
+  }
+  .testimonials .testimonials_3style .testimonials_1{
+    flex: 1;
+  }
+  .testimonials .testimonials_3style .testimonials_2{
+    flex: 1;
+  }
+  .testimonials .testimonials_3style .testimonials_3{
+    flex: 1;
+  }
+
+  /* MEDIUM CALL TO ACTIONS */
+  .calltoactions h2{
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+  .calltoactions .circle-text-container{
+    display: none;
+
+  }
+  .calltoactions .circle-text-container-hidden{
+    display: block;
+  }
+
+  /* MEDIUM FOOTER */
+  footer .footertop{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  footer .footertop ul {
+    list-style-type: none;
+    display:flex;
+    margin:auto;
+  }
+  footer .footertop ul li{
+    display: flex;
+  }
+}
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 6.6rem;
+    font-weight: 400;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  .content-width {
+    width: 1130px;
+  }
+
+  /* LARGE HEADER */
+  header img{
+    margin-top: 15px;
+  }
+  nav {
+    width:100%;
+    padding-top: 0px;
+    justify-content: flex-start;
+  }
+  nav .wrapper{
+    width:100%;
+  }
+  nav .toggle {
+    display: none;
+  }
+  #nav-items {
+   display: flex;
+  }
+  nav .login-hidden{
+    display: none;
+  }
+
+  nav ul{
+    margin-left:60px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  nav ul li a{
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-top:2%;
+  } 
+  nav ul li.login{
+    display: flex;
+    margin-left: auto;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  nav ul li.login a{
+    text-transform: uppercase;
+    background-color: #424b5a;
+    border-radius: 4px;
+    color: #ffffff;
+    padding:10px 40px;
+  }
+
+  /* LARGE HERO */
+  section.hero {
+    background-size: auto 75%;
+    text-align: initial;
+    height: initial;
+  }
+  section.hero p {
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 50%;
+  }
+
+  /* LARGE BENEFITS */
+  .benefits{
+    display:flex;
+    flex-direction: row;
+    margin:5%;
+  }
+  .benefits .benefits_left{
+    width: 50%;
+    justify-content: flex-start;
+    text-align: left;
+    margin-right: 5px;
+  }
+  .benefits .benefits_right{
+    width: 50%;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+
+
+  /* LARGE TESTIMONIALS */
+  .testimonials .testimonials_3style .testimonials_1{
+    padding:3%;
+  }
+  .testimonials .testimonials_3style .testimonials_2{
+    padding:3%;
+  }
+  .testimonials .testimonials_3style .testimonials_3{
+    padding:3%;
+  }
+
+  /* MEDIUM CALL TO ACTIONS */
+  .calltoactions .circle-text-container-hidden p{
+    padding:0% 20%;
+  }
+
+}
+
