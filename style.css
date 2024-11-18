@@ -16,18 +16,27 @@ body {
   line-height: 1.5;
 }
 
-
 /*-------- TYPOGRAPHY ---------*/
 h1 {
   font-size: 3.8rem;
   color: #ffffff;
-  /* line-height: 1; */
   font-weight: 700;
   margin: 0px;
   padding: 5px;
   width:100px;
-  /*  padding-left: 15px;
-  padding-right: 15px; */
+}
+
+h2{
+  font-size:2.8rem;  
+  font-weight:bold;
+  color:#2919bb;
+  margin:auto;
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+  margin:auto;
 }
 
 a {
@@ -37,40 +46,8 @@ a {
   padding: 8px 48px;
 }
 
-/* a.button {
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #424b5a;
-  border-radius: 4px;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin: 26px 0;
-} */
-
-/* Add h2 common styles */
-h2{
-  font-size:2.8rem;  
-  font-weight:bold;
-  color:#2f5b79;
-  margin:auto;
-
-}
-
-/* Add a container style for circle sentenses
-.circle-text-container{
-  width:90%;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  word-wrap: break-word;
-} */
 
 /*-------- UTILITY ---------*/
-/* these CSS properties have been sepearated into individual style rules so that you can apply them to multiple blocks of content */
-
 .content-width {
   width: 334px;
   margin: auto;
@@ -78,6 +55,7 @@ h2{
 
 .dark-background {
   background-color: #2f5b79;
+  /* background-color: #2919bb; */
   color:white;
 }
 
@@ -88,8 +66,6 @@ header{
 header .toggle{
   margin:auto;
   text-align: center;
-  /* margin:0px;
-  padding-right:1%; */
 }
 nav {
   text-align: right;
@@ -116,35 +92,13 @@ header img{
   margin: auto;
   display: block;
   width:50%;
-  /* position: absolute; */
-  /* margin: 2%; */
-  /* margin:auto; */
-
-  /* width:calc(100%-7%); */
-
 }
-/* nav .login-hidden{
-  display:none;
-} */
-
 
 /*-------- FOOTER ---------*/
-/* footer .footertop{
-  text-align: center;
-}
-footer .footertop ul{
-  list-style-type: none;
-  padding:0px;
-}
-footer .footertop ul a {
-  text-decoration: none;
-  font-size: 1.2rem;
-} */
 footer .footerbottom{
   border-top:1px solid #C2D1D9;
   text-align: center;
 }
-
 
 /*-------- HERO ---------*/
 section.hero {
@@ -159,106 +113,47 @@ section.hero p{
   color:yellow;
 }
 
-
 /*-------- benefit ---------*/
 .benefits{
   width:90%;
   margin:5% ;
 }
-.benefits h2{
+.benefits p{
+  margin: 0px;
+  padding:0px 10px 10px 10px;
+}
+
+.benefits .benefits_left p{
+  color:#e1e8ec;
+  /* background-color: #2919bb; */
+}
+.benefits .benefits_left ul{
+  margin:0px 0px 30px 0px;
+}
+/* .benefits .benefits_left h3{
+  text-align: center;
+  margin-bottom: 3px;
+} */
+/* .benefits .benefits_left p{
+  margin-top: 0px;
+} */
+
+
+/*-------- Testimonials ---------*/
+.testimonials_detail{
+  background-color: #e1e8ec;
+  border-radius:3%;
+  margin-bottom:20px;
+}
+.testimonials .testimonials_detail h3{
   text-align: center;
   margin-bottom: 3px;
 }
-.benefits p{
+.testimonials .testimonials_detail p{
   margin: 0px;
   padding:0px 10px 0px 10px;
 }
-
-.benefits .benefits_left {
-  background-color: #e1e8ec;
-  border-radius:3%;
-}
-
-.benefits .benefits_left h3{
-  text-align: center;
-  margin-bottom: 3px;
-}
-.benefits .benefits_left p{
-  margin-top: 0px;
-}
-/* .benefits .benefits_left h2{
-  font-size: 3.6rem;
-} */
-
-/* .benefits .benefits_left .circle-text-container p {
-  text-align: center;
-  padding:10px;
-}
-.benefits .benefits_left .circle-text-container-hidden{
-  display: none;
-} */
-
-/* .benefits .benefits_left img{
-  width:15%;
-  background-color:#f2f5f7;
-  border: 1px solid #a1aeb7;
-}
-.benefits .benefits_left .benefits_imgmobile img{
-  width:100%;
-} */
-
-/* .benefits .benefits_left .benefits_left_1{
-  flex: 1;
-}
-.benefits .benefits_left .benefits_left_1 h3{
-  margin-top:0px;
-  margin-bottom:0px;
-}
-.benefits .benefits_left .benefits_left_1 p{
-  padding:0% 25% 5% 25%;
-  margin-top:0px;
-}
-
-.benefits .benefits_left .benefits_left_2{
-  flex: 1;
-}
-.benefits .benefits_left .benefits_left_2 h3{
-  margin-top:0px;
-  margin-bottom:0px;
-}
-.benefits .benefits_left .benefits_left_2 p{
-  padding:0% 25% 5% 25%;
-  margin-top:0px;
-}
-
-.benefits .benefits_left .benefits_left_3{
-  flex: 1;
-}
-.benefits .benefits_left .benefits_left_3 h3{
-  margin-top:0px;
-  margin-bottom:0px;
-}
-.benefits .benefits_left .benefits_left_3 p{
-  padding:0% 25% 5% 25%;
-  margin-top:0px;
-}
-
-.benefits .benefits_right{
-  display:none;
-  width: 100%;
-}
-.benefits .benefits_right img{
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  background-color:#f2f5f7;
-  border: 1px solid #a1aeb7;
-} */
-
-
-/*-------- Testimonials-Tablet-1 ---------*/
-.testimonials h2{
+/* .testimonials h2{
   text-align: center;
   font-size: 3.6rem;
   width:90%;
@@ -285,7 +180,7 @@ section.hero p{
 }
 .testimonials .circle-text-container{
   margin: auto;
-}
+} */
 
 
 /*-------- Call to actions - Desktop - 1 ---------*/
