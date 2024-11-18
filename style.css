@@ -12,7 +12,8 @@ body {
   margin: 0;
   font-family: "Ubuntu", serif;
   font-weight: 400;
-  color: #2f5b79;
+  color: #ffffff;
+  background-color: #2f5b79;
   line-height: 1.5;
 }
 
@@ -29,7 +30,7 @@ h1 {
 h2{
   font-size:2.8rem;  
   font-weight:bold;
-  color:#2919bb;
+  color:rgb(236, 220, 50);
   margin:auto;
   text-align: center;
 }
@@ -53,11 +54,12 @@ a {
   margin: auto;
 }
 
-.dark-background {
-  background-color: #2f5b79;
+.change-background{
+  background-color: white;
   /* background-color: #2919bb; */
-  color:white;
+  color:#2f5b79;
 }
+
 
 /*-------- HEADER ---------*/
 header{
@@ -95,7 +97,7 @@ header img{
 }
 
 /*-------- FOOTER ---------*/
-footer .footerbottom{
+footer{
   border-top:1px solid #C2D1D9;
   text-align: center;
 }
@@ -110,36 +112,34 @@ section.hero {
 }
 section.hero p{
   text-align: center;
-  color:yellow;
+  color:rgb(236, 220, 50);
 }
 
-/*-------- benefit ---------*/
+/*-------- ABOUT ---------*/
+.about{
+  width:100%;
+  padding:5% ;
+}
+.about h2{
+  color:#2919bb;
+}
+
+
+/*-------- BENEFIT ---------*/
 .benefits{
   width:90%;
   margin:5% ;
 }
+
 .benefits p{
   margin: 0px;
   padding:0px 10px 10px 10px;
 }
-
-.benefits .benefits_left p{
-  color:#e1e8ec;
-  /* background-color: #2919bb; */
-}
-.benefits .benefits_left ul{
+.benefits .benefits_detail ul{
   margin:0px 0px 30px 0px;
 }
-/* .benefits .benefits_left h3{
-  text-align: center;
-  margin-bottom: 3px;
-} */
-/* .benefits .benefits_left p{
-  margin-top: 0px;
-} */
 
-
-/*-------- Testimonials ---------*/
+/*-------- TESTIMONIALS ---------*/
 .testimonials_detail{
   background-color: #e1e8ec;
   border-radius:3%;
@@ -148,220 +148,26 @@ section.hero p{
 .testimonials .testimonials_detail h3{
   text-align: center;
   margin-bottom: 3px;
+  color:#2f5b79;
 }
 .testimonials .testimonials_detail p{
   margin: 0px;
-  padding:0px 10px 0px 10px;
+  padding:0px 10px 10px 10px;
+  color:#2f5b79;
 }
-/* .testimonials h2{
-  text-align: center;
-  font-size: 3.6rem;
-  width:90%;
-  margin:auto;
-  padding:10%;
-}
-.testimonials h3{
-  color:#505D68;
-  margin-top: 0px;
-}
-.testimonials .testimonials_3style{
-  width:100%;
-  text-align: center;
-  letter-spacing: var(--unnamed-character-spacing-0);
-}
-.testimonials .testimonials_3style img{
-  width:50%;
-}
-.testimonials .testimonials_3style h3{
-  margin-bottom:0px;
-}
-.testimonials .testimonials_3style p{
-  margin-top:0px;
-}
-.testimonials .circle-text-container{
-  margin: auto;
-} */
 
-
-/*-------- Call to actions - Desktop - 1 ---------*/
+/*-------- CALL TO ACTIONS ---------*/
 .calltoactions{
   text-align: center;
   padding:3%;
 }
-.calltoactions h2{
-  font-size: 3.6rem;
-  margin:auto;
-  padding:10%;
-}
-.calltoactions .circle-text-container{
-  margin: auto;
-  padding: 0% 5% 0% 5%;
-}
-.calltoactions .circle-text-container-hidden{
-  display: none;
+.calltoactions h2 a {
+  color: rgb(236, 220, 50);
+  display: block;
+  margin: 16px 0;
+  padding: 8px 48px;
 }
 
-
-/*-------- MEDIUM DEVICES (vertical ipads, 768px and up) ---------*/
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 1.6rem;
-  }
-
-  h1 {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-  .content-width {
-    width: 690px;
-  }
-
-  /* MEDIUM HERO */
-  section.hero {
-    background-size: auto 40%;
-    padding: 104px 0;
-  }
-  section.hero p {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-
-
-  /* MEDIUM HEADER */
-  nav{
-    display:flex;
-    justify-content: flex-end;
-  }
-  nav ul li.login{
-    display:none;
-  }
-  nav .login-hidden{
-    display:block;
-    width:80%;
-  } 
-  nav .login-hidden a{
-    margin-top:10px;
-    margin-bottom:0px;
-  } 
-
-
-  /* MEDIUM BENEFITS */
-  .benefits{
-    display:flex;
-    flex-direction: column;
-  }
-  .benefits .benefits_imgmobile{
-    display:none;
-  }
-  .benefits .benefits_right{
-    display:block;
-  }
-  .benefits .circle-text-container{
-    display: none;
-  }
-  .benefits .benefits_left .circle-text-container-hidden{
-    display: block;
-    padding: 0px;
-  }
-
-  .benefits .benefits_left{
-    margin:0px;
-    width:100%;
-    display:flex;
-    flex-wrap:wrap;
-  }
-  .benefits .benefits_left .benefits_left_1{
-    flex: 1;
-    margin-top:30px;
-    margin-bottom:30px;
-  }
-  .benefits .benefits_left .benefits_left_2{
-    flex: 1;
-    margin-top:30px;
-    margin-bottom:30px;
-  }
-  .benefits .benefits_left .benefits_left_3{
-    flex: 1;
-    margin-top:30px;
-    margin-bottom:30px;
-  }
-  .benefits .benefits_left .benefits_left_1 p{
-    padding:0px;
-  }
-  .benefits .benefits_left .benefits_left_2 p{
-    padding:0px;
-  }
-  .benefits .benefits_left .benefits_left_3 p{
-    padding:0px;
-  }
-
-  /* MEDIUM TESTIMONIALS */
-  .testimonials{
-    display:flex;
-    flex-direction: column;
-  }
-  .testimonials h2{
-    align-content:center;
-    text-align: center;
-  }
-  .testimonials h3{
-    color:#505D68;
-  }
-  .testimonials .testimonials_3style{
-    width:100%;
-    display:flex;
-    flex-wrap:wrap;
-    text-align: center;
-    letter-spacing: var(--unnamed-character-spacing-0);
-  }
-  .testimonials .testimonials_3style img{
-    width:50%;
-  }
-  .testimonials .testimonials_3style h3{
-    margin-bottom:0px;
-  }
-  .testimonials .testimonials_3style p{
-    margin-top:0px;
-  }
-  .testimonials .testimonials_3style .testimonials_1{
-    flex: 1;
-  }
-  .testimonials .testimonials_3style .testimonials_2{
-    flex: 1;
-  }
-  .testimonials .testimonials_3style .testimonials_3{
-    flex: 1;
-  }
-
-  /* MEDIUM CALL TO ACTIONS */
-  .calltoactions h2{
-    padding-top:0px;
-    padding-bottom:0px;
-  }
-  .calltoactions .circle-text-container{
-    display: none;
-
-  }
-  .calltoactions .circle-text-container-hidden{
-    display: block;
-  }
-
-  /* MEDIUM FOOTER */
-  footer .footertop{
-    display: flex;
-    flex-direction:column;
-    align-items:center;
-  }
-  footer .footertop ul {
-    list-style-type: none;
-    display:flex;
-    margin:auto;
-  }
-  footer .footertop ul li{
-    display: flex;
-  }
-}
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
