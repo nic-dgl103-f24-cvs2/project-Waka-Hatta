@@ -125,8 +125,8 @@ section.hero p{
 
 /*-------- BENEFIT ---------*/
 .benefits{
-  width:90%;
-  margin:5% ;
+  width:100%;
+  /* margin:5% ; */
 }
 
 .benefits p{
@@ -139,7 +139,7 @@ section.hero p{
 
 /*-------- TESTIMONIALS ---------*/
 .testimonials_detail{
-  background-color: #e1e8ec;
+  background-color: white;
   border-radius:3%;
   margin-bottom:20px;
 }
@@ -169,7 +169,10 @@ section.hero p{
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
-
+  .content-width {
+    width: 1150px;
+  }
+  
   h1 {
     font-size: 6.8rem;
   }
@@ -178,6 +181,9 @@ section.hero p{
   }
   h3 {
     font-size: 2.8rem;
+  }
+  p{
+    font-size: 2.2rem;
   }
 
   nav {
@@ -196,7 +202,7 @@ section.hero p{
   }
   nav ul li a{
     padding: 10px;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     margin:auto;
   }
 
@@ -210,29 +216,51 @@ section.hero p{
     height: initial; 
   }
 
-
   /* LARGE BENEFITS */
   .benefits{
     display:flex;
     flex-direction: column;
   }
-
   .benefits .benefits_2{
     display:flex;
     flex-direction: row;
     width: 100%;
-    /* justify-content: flex-start; */
-    /* text-align: left; */
-    /* margin-right: 5px; */
+    margin-right: 5px;
   }
   .benefits .benefits_2 .benefits_detail{
-    /* width: calc((100%-30px) / 3); */
-    width: 30%;
-    padding:5px;
+    width: calc(100%/3);
+  }
+  .benefits .benefits_2 .benefits_detail h3{
+    font-size: 2.0rem;
+  }
+  .benefits ul li{
+    font-size: 2.0rem;
   }
 
 
+  /* LARGE TESTIMONIALS */
+  .testimonials{
+    display:flex;
+    flex-direction: column;
+  }
+  .testimonials .testimonials_2{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+  }
+  .testimonials .testimonials_2 h3{
+    color:#2919bb;
+  }
+  .testimonials .testimonials_2 .testimonials_detail{
+    width: calc(100%/2 - 20px);
+    margin:10px;
+    height:320px;
+  }
 
+  .testimonials .testimonials_2 .testimonials_detail_long{
+    height:610px;    
+  }
   
   /* section.hero p {
     padding-bottom: 30px;
