@@ -46,6 +46,7 @@ a {
   display: block;
   margin: 16px 0;
   padding: 8px 48px;
+  font-size:1.8rem; 
 }
 
 
@@ -153,6 +154,9 @@ section.hero p{
   padding:0px 10px 10px 10px;
   color:#2f5b79;
 }
+.testimonials .testimonials_2 h3{
+  color:#2919bb;
+}
 
 /*-------- CALL TO ACTIONS ---------*/
 .calltoactions{
@@ -164,8 +168,11 @@ section.hero p{
   display: block;
   margin: 16px 0;
   padding: 8px 48px;
+  font-size:2.8rem;
 }
-
+.calltoactions address a{
+  text-decoration: none;
+}
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
@@ -249,9 +256,6 @@ section.hero p{
     width: 100%;
     margin: 0px;
   }
-  .testimonials .testimonials_2 h3{
-    color:#2919bb;
-  }
   .testimonials .testimonials_2 .testimonials_detail{
     width: calc(100%/2 - 20px);
     margin:10px;
@@ -260,6 +264,10 @@ section.hero p{
 
   .testimonials .testimonials_2 .testimonials_detail_long{
     height:610px;    
+  }
+
+  .calltoactions h2 a{
+    font-size: 4.8rem;
   }
   
   /* section.hero p {
