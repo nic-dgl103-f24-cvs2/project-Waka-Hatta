@@ -219,18 +219,19 @@ section.hero p{
   margin-top: 0px;
   color: var(--text-color);
 }
-.team .team_3style{
+
+.team .team_1, .team_3style{
   width:100%;
   text-align: center;
   letter-spacing: var(--unnamed-character-spacing-0);
-}
-.team .team_3style img{
+} 
+.team img{
   width:50%;
 }
-.team .team_3style h3{
-  margin-bottom:0px;
+.team h3{
+  margin-bottom:2px;
 }
-.team .team_3style p{
+.team p{
   margin-top:0px;
 }
 
@@ -277,6 +278,10 @@ section.hero p{
     font-size: 2.4rem;
     margin:auto;
   }
+
+/*----------------------------------------*/
+/*             Home page                  */
+/*----------------------------------------*/
 
  /* LARGE HERO */
   section.hero {
@@ -340,14 +345,20 @@ section.hero p{
 /*----------------------------------------*/
 /*             Our Team page              */
 /*----------------------------------------*/
+.team{
+  width:95%;
+}
+
+.team .team_1 p{
+  width:95%;
+  padding-left:15%;
+  padding-right:15%;
+}
   .team .team_3style{
-    width:100%;
-    display:flex;
-    flex-wrap:wrap;
     text-align: center;
     letter-spacing: var(--unnamed-character-spacing-0);
   }
-  .team .team_3style .team_1 img{
+  .team .team_3style img{
     width:50%;
   }
   .team .team_3style h3{
@@ -355,14 +366,35 @@ section.hero p{
   }
   .team .team_3style p{
     margin-top:0px;
+    padding-left:3%;
+    padding-right:3%;
   }
-  .team .team_3style .team_1{
+
+
+  .team .team_3style .teamstyle1, .teamstyle2{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .team .team_3style .team_2, .team_3{
     flex: 1;
+    background-color: var(--textsoft-color);
+    color: var(--highlight-color);
+    margin:10px;
+    width:50%;
+    border-radius: 5%;
+
+    /* display:flex;
+    flex-direction: row;
+    height:600px; */
+
   }
-  .team .team_3style .team_2{
+/*  .team .team_3style .team_3{
     flex: 1;
-  }
-  .team .team_3style .team_3{
-    flex:1;
-  }
+    background-color: red;
+    color: var(--highlight-color);
+     display:flex;
+    flex-direction: column; 
+    margin:auto;
+  }*/
 }
