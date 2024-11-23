@@ -7,12 +7,16 @@ html {
   font-size: 62.5%;
 }
 :root {
-  --text-color: rgb(236, 220, 50);
-  --highlight-color:#2919bb;
+  /* --text-color: rgb(236, 220, 50); */
+  --text-color: #ba9b65;
+  --textsoft-color:#f4efdc;
+  /* --highlight-color:#2919bb; */
+  --highlight-color:#365fb7;
+  --highlight2-color:#799ae0;
   --basetext-color: #ffffff;
-  --back-color: #2f5b79;
+  /* --back-color: #2f5b79; */
+  --back-color: #133463;
   --backhighlight-color: #ffffff;
-
 }
 
 body {
@@ -28,15 +32,19 @@ body {
 
 /*-------- TYPOGRAPHY ---------*/
 h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
   font-size: 3.8rem;
-  color: var(--basetext-color);
-  font-weight: 700;
+  color: var(--textsoft-color);
+  font-weight: 800;
   margin: 0px;
   padding: 5px;
   width:100px;
 }
 
 h2{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
   font-size:2.8rem;  
   font-weight:bold;
   color: var(--text-color);
@@ -45,6 +53,8 @@ h2{
 }
 
 h3{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
   font-size:1.8rem;  
   text-align: center;
   margin:auto;
@@ -74,7 +84,8 @@ a {
 
 /*-------- HEADER ---------*/
 header{
-  padding: 0px;
+  color:var(--textsoft-color);
+  font-style: normal;
 }
 header .toggle{
   margin:auto;
@@ -141,12 +152,17 @@ section.hero p{
 /*-------- BENEFIT ---------*/
 .benefits{
   width:100%;
-  /* margin:5% ; */
 }
-
+.benefits video{
+  width:100%;
+  margin:auto;
+}
 .benefits p{
   margin: 0px;
   padding:0px 10px 10px 10px;
+}
+.benefits h3{
+  color:var(--textsoft-color);
 }
 .benefits .benefits_detail ul{
   margin:0px 0px 30px 0px;
@@ -191,12 +207,13 @@ section.hero p{
 /*----------------------------------------*/
 /*             Our Team page              */
 /*----------------------------------------*/
+
 .team h2{
   text-align: center;
   font-size: 3.6rem;
   width:100%;
   margin:auto;
-  /* padding:5%; */
+  color: var(--textsoft-color);
 }
 .team h3{
   margin-top: 0px;
@@ -216,9 +233,7 @@ section.hero p{
 .team .team_3style p{
   margin-top:0px;
 }
-/* .team .circle-text-container{
-  margin: auto;
-} */
+
 
 
 
@@ -319,153 +334,35 @@ section.hero p{
   .calltoactions h2 a{
     font-size: 4.8rem;
   }
-  
-  /* section.hero p {
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-  } */
-  /* section.hero {
-    background-image: url("images/hero_mobile.jpg");
-    background-position: left top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 30vh;
-  }
-  section.hero p{
-    text-align: center;
-    color:rgb(236, 220, 50);
-  } */
 
 
 
-  /* nav ul li{
-    display: flex;
-    margin-left: auto;
-    margin-top:10px;
-    margin-bottom:10px;
-  } */
-  /* nav ul li a{
-    text-transform: uppercase;
-    background-color: #424b5a;
-    border-radius: 4px;
-    color: #ffffff;
-    padding:10px 40px; */
-
-
-
-
-
-  /* h1 {
-    font-size: 6.6rem;
-    font-weight: 400;
-    padding-left: 0;
-    padding-right: 0;
-    width: 50%;
-  } */
-
-  /* a {
-    display: inline-block;
-  }
-
-  .content-width {
-    width: 1130px;
-  } */
-
-  /* LARGE HEADER */
-  /* header img{
-    margin-top: 15px;
-  }
-  nav {
+/*----------------------------------------*/
+/*             Our Team page              */
+/*----------------------------------------*/
+  .team .team_3style{
     width:100%;
-    padding-top: 0px;
-    justify-content: flex-start;
-  }
-  nav .wrapper{
-    width:100%;
-  }
-  nav .toggle {
-    display: none;
-  }
-  #nav-items {
-   display: flex;
-  }
-  nav .login-hidden{
-    display: none;
-  }
-
-  nav ul{
-    margin-left:60px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  nav ul li a{
-    padding: 20px;
-    font-size: 1.2rem;
-    margin-top:2%;
-  } 
-  nav ul li.login{
-    display: flex;
-    margin-left: auto;
-    margin-top:10px;
-    margin-bottom:10px;
-  }
-  nav ul li.login a{
-    text-transform: uppercase;
-    background-color: #424b5a;
-    border-radius: 4px;
-    color: #ffffff;
-    padding:10px 40px;
-  } */
-
-  /* LARGE HERO */
-  /* section.hero {
-    background-size: auto 75%;
-    text-align: initial;
-    height: initial;
-  }
-  section.hero p {
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 50%;
-  } */
-
-  /* LARGE BENEFITS */
-  /* .benefits{
     display:flex;
-    flex-direction: row;
-    margin:5%;
+    flex-wrap:wrap;
+    text-align: center;
+    letter-spacing: var(--unnamed-character-spacing-0);
   }
-  .benefits .benefits_left{
-    width: 50%;
-    justify-content: flex-start;
-    text-align: left;
-    margin-right: 5px;
+  .team .team_3style .team_1 img{
+    width:50%;
   }
-  .benefits .benefits_right{
-    width: 50%;
-    margin-top: 2%;
-    margin-left: 5%;
-  } */
-
-
-  /* LARGE TESTIMONIALS */
-  /* .testimonials .testimonials_3style .testimonials_1{
-    padding:3%;
+  .team .team_3style h3{
+    margin-bottom:0px;
   }
-  .testimonials .testimonials_3style .testimonials_2{
-    padding:3%;
+  .team .team_3style p{
+    margin-top:0px;
   }
-  .testimonials .testimonials_3style .testimonials_3{
-    padding:3%;
-  } */
-
-  /* MEDIUM CALL TO ACTIONS */
-  /* .calltoactions .circle-text-container-hidden p{
-    padding:0% 20%;
-  } */
-
+  .team .team_3style .team_1{
+    flex: 1;
+  }
+  .team .team_3style .team_2{
+    flex: 1;
+  }
+  .team .team_3style .team_3{
+    flex:1;
+  }
 }
-
