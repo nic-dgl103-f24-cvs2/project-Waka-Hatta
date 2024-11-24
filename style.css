@@ -207,7 +207,6 @@ section.hero p{
 /*----------------------------------------*/
 /*             Our Team page              */
 /*----------------------------------------*/
-
 .team h2{
   text-align: center;
   font-size: 3.6rem;
@@ -235,10 +234,23 @@ section.hero p{
   margin-top:0px;
 }
 
+/*----------------------------------------*/
+/*           Contact Us page              */
+/*----------------------------------------*/
+.contactus p{
+  font-size:1.6rem;
+  font-style: normal;
+}
+.contactus address{
+  color:var(--textsoft-color);
+  display: flex;
+}
 
-
-
-
+.contactus .google-map{
+  justify-content: center;
+  align-items: center; 
+  width: 90%;
+}
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
@@ -312,7 +324,14 @@ section.hero p{
   .benefits ul li{
     font-size: 2.0rem;
   }
-
+  .benefits .video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefits .video-container video{
+    width:50%;
+  }
 
   /* LARGE TESTIMONIALS */
   .testimonials{
