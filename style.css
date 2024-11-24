@@ -7,14 +7,11 @@ html {
   font-size: 62.5%;
 }
 :root {
-  /* --text-color: rgb(236, 220, 50); */
   --text-color: #ba9b65;
   --textsoft-color:#f4efdc;
-  /* --highlight-color:#2919bb; */
   --highlight-color:#365fb7;
   --highlight2-color:#799ae0;
   --basetext-color: #ffffff;
-  /* --back-color: #2f5b79; */
   --back-color: #133463;
   --backhighlight-color: #ffffff;
 }
@@ -41,9 +38,8 @@ h1 {
   padding: 5px;
   width:100px;
 }
-
 h2{
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif; 
   font-style: normal;
   font-size:2.8rem;  
   font-weight:bold;
@@ -51,7 +47,6 @@ h2{
   margin:auto;
   text-align: center;
 }
-
 h3{
   font-family: "Playfair Display", serif;
   font-style: normal;
@@ -59,7 +54,6 @@ h3{
   text-align: center;
   margin:auto;
 }
-
 a {
   color: var(--basetext-color);
   display: block;
@@ -74,13 +68,10 @@ a {
   width: 334px;
   margin: auto;
 }
-
 .change-background{
   background-color: var(--backhighlight-color);
-  /* background-color: #2919bb; */
   color:var(--back-color);
 }
-
 
 /*-------- HEADER ---------*/
 header{
@@ -118,9 +109,14 @@ header img{
 /*-------- FOOTER ---------*/
 footer{
   border-top:1px solid #C2D1D9;
-  text-align: center;
+  display:flex;
+  justify-content: center;
 }
-
+footer a, p{
+  margin:0;
+  padding-top:5px;
+  padding-bottom:5px;
+}
 
 /*----------------------------------------*/
 /*             Home page                  */
@@ -237,20 +233,28 @@ section.hero p{
 /*----------------------------------------*/
 /*           Contact Us page              */
 /*----------------------------------------*/
+.contactus h2{
+  text-align: center;
+  font-size: 3.6rem;
+  width:100%;
+  margin:auto;
+  color: var(--textsoft-color);
+}
 .contactus p{
   font-size:1.6rem;
   font-style: normal;
 }
 .contactus address{
   color:var(--textsoft-color);
-  display: flex;
+
 }
 
-.contactus .google-map{
+/* .contactus .google-map{
+  display: flex;
   justify-content: center;
   align-items: center; 
   width: 90%;
-}
+} */
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
