@@ -359,10 +359,10 @@ input:required {
 
  /* LARGE HERO */
   section.hero {
-    background-image: url("images/hero.jpg");
+    background-image: url("images/hero_large.png");
     background-size: 100% 100%;
-    min-height: 50vh;
-    background-size: cover; 
+    /* min-height: 50vh; */
+    background-size:100%; 
     height: initial; 
   }
 
