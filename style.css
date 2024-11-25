@@ -269,32 +269,21 @@ th {
   margin-top:2%;
   margin-bottom:3%;
 }
-.contactus h3{
-margin-top: 0px;
-color: var(--text-color);
-}
 
- form{
+.contactform form{
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color:var(--highlight2-color);
   padding: 20px;
   width: 90%;
   margin: 0 auto;
 }
-
 .contactform-button {
   display: flex;
   justify-content: space-between;
 }
-
-/* ===============
-   FORM CONTROLS
-   =============== */
-
-input,
-select,
-textarea {
-  font-size: 1em;
+.contactform-button input{
+  color: var(--backhighlight-color);
+  background-color: var(--highlight-color);
 }
 
 input[type="text"],
@@ -308,7 +297,6 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
 input[type="email"] {
   width: 100%;
   padding: 12px;
@@ -318,21 +306,10 @@ input[type="email"] {
   margin-bottom: 16px;
   resize: vertical;
 }
-
-textarea {
-  font-family: sans-serif;
-}
-
-fieldset {
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-}
-
 .label-required {
   font-size: 0.8rem;
   color: red;
 }
-
 input:required {
   border: 1px solid red;
 }
