@@ -111,6 +111,7 @@ footer{
   border-top:1px solid #C2D1D9;
   display:flex;
   justify-content: center;
+  margin-top:5px;
 }
 footer a, p{
   margin:0;
@@ -256,6 +257,9 @@ th {
   margin:auto;
   color: var(--textsoft-color);
 }
+.contactus h3{
+  color:var(--text-color);
+}
 .contactus p{
   font-size:1.6rem;
   font-style: normal;
@@ -274,7 +278,7 @@ th {
   border-radius: 5px;
   background-color:var(--highlight2-color);
   padding: 20px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .contactform-button {
@@ -313,46 +317,6 @@ input[type="email"] {
 input:required {
   border: 1px solid red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contactus .contactform input[type="reset"] {
-  color: #0e7a0d;
-  padding: 12px 20px;
-  border: 1px solid #0e7a0d;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contactus .contactform input[type="reset"]:hover {
-  background-color: #d1efe3;
-}
-
-.contactus .contactform input[type="submit"] {
-  background-color: #0e7a0d;
-  color: white;
-  padding: 12px 20px;
-  border: 1px solid #0e7a0d;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.contactus .contactform input[type="submit"]:hover {
-  background-color: #00ab66;
-}
-
 
 /*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
 @media only screen and (min-width: 1200px) {
@@ -461,15 +425,15 @@ input:required {
 /*----------------------------------------*/
 /*             Our Team page              */
 /*----------------------------------------*/
-.team{
-  width:95%;
-}
+  .team{
+    width:95%;
+  }
 
-.team .team_1 p{
-  width:95%;
-  padding-left:15%;
-  padding-right:15%;
-}
+  .team .team_1 p{
+    width:95%;
+    padding-left:15%;
+    padding-right:15%;
+  }
   .team .team_3style{
     text-align: center;
     letter-spacing: var(--unnamed-character-spacing-0);
@@ -486,12 +450,10 @@ input:required {
     padding-right:3%;
   }
 
-
   .team .team_3style .teamstyle1, .teamstyle2{
     display:flex;
     flex-wrap:wrap;
   }
-
   .team .team_3style .team_2, .team_3{
     flex: 1;
     background-color: var(--textsoft-color);
@@ -500,4 +462,24 @@ input:required {
     width:50%;
     border-radius: 5%;
   }
+
+  /*----------------------------------------*/
+  /*             Contact Us page            */
+  /*----------------------------------------*/ 
+  .contactall{
+    display:flex;
+    flex-wrap:wrap;
+  } 
+  .contactaddress{
+    width:45%;
+    flex:1;
+    margin-right:10px;
+  }
+  .contactform{
+    width:45%;
+    flex:1;
+    margin-left:10px;
+  }
+
+
 }

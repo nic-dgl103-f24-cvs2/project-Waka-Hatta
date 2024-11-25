@@ -52,20 +52,83 @@
     <main>
       <section class="content-width contactus">
         <h2>Contact Us</h2>
-        <p>For more information, or to book an appointment contact us today!</p>
-        <address>
-          <p>Phone:12508711121</p>
-          <p>Email:Nicole@nicolecahoon.com</p>
-          <p>Address:350 17th St, Courtenay, BC V9N 1Y4</p>
-        </address>
-        <iframe
-          class="google-map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.455431878542!2d-124.99099209999997!3d49.683395800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881477e93cdeb3%3A0xf1de24315ceda0d2!2s350%2017th%20St%2C%20Courtenay%2C%20BC%20V9N%201Y4!5e0!3m2!1sen!2sca!4v1732433850785!5m2!1sen!2sca"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div class="contactall">
+          <div class="contactaddress">
+            <h3>Address</h3>
+            <p>
+              For more information, or to book an appointment contact us today!
+            </p>
+            <address>
+              <p>Phone:12508711121</p>
+              <p>Email:Nicole@nicolecahoon.com</p>
+              <p>Address:350 17th St, Courtenay, BC V9N 1Y4</p>
+            </address>
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.455431878542!2d-124.99099209999997!3d49.683395800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881477e93cdeb3%3A0xf1de24315ceda0d2!2s350%2017th%20St%2C%20Courtenay%2C%20BC%20V9N%201Y4!5e0!3m2!1sen!2sca!4v1732433850785!5m2!1sen!2sca"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contactform">
+            <h3>Contact Form</h3>
+            <form method="post" action="">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ex: Sara"
+              />
+              <label for="lname"
+                >Last Name<span class="label-required">
+                  * (required)</span
+                ></label
+              >
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Ex: Smith"
+                required
+              />
+              <label for="email"
+                >Email <span class="label-required"> * (required)</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex: mike@yahoo.com"
+                required
+              />
+              <label for="service">Your interesting</label>
+              <select id="service" name="service">
+                <option value="default"></option>
+                <option value="accounting">Accounting Services</option>
+                <option value="consulting">Business Consulting Services</option>
+                <option value="tax">Tax Services</option>
+                <option value="others">Others</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please tell us a little about your enquiry"
+                style="height: 200px"
+              ></textarea>
+
+              <div class="contactform-button">
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
