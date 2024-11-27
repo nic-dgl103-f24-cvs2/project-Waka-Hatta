@@ -1,0 +1,517 @@
+/*-------- GLOBAL STYLES ---------*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --text-color: #ba9b65;
+  --textsoft-color:#f4efdc;
+  --highlight-color:#365fb7;
+  --highlight2-color:#799ae0;
+  --basetext-color: #ffffff;
+  --back-color: #133463;
+  --backhighlight-color: #ffffff;
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  color:var(--basetext-color);
+  background-color:var(--back-color);
+  line-height: 1.5;
+}
+
+
+/*-------- TYPOGRAPHY ---------*/
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 3.8rem;
+  color: var(--textsoft-color);
+  font-weight: 800;
+  margin: 0px;
+  padding: 5px;
+  width:100px;
+}
+h2{
+  font-family: "Playfair Display", serif; 
+  font-style: normal;
+  font-size:2.8rem;  
+  font-weight:bold;
+  color: var(--text-color);
+  margin:auto;
+  text-align: center;
+}
+h3{
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size:1.8rem;  
+  text-align: center;
+  margin:auto;
+}
+a {
+  color: var(--basetext-color);
+  display: block;
+  margin: 16px 0;
+  padding: 8px 48px;
+  font-size:1.8rem; 
+}
+
+/*-------- UTILITY ---------*/
+.content-width {
+  width: 334px;
+  margin: auto;
+}
+.change-background{
+  background-color: var(--backhighlight-color);
+  color:var(--back-color);
+}
+
+/*-------- HEADER ---------*/
+header{
+  color:var(--textsoft-color);
+  font-style: normal;
+}
+header .toggle{
+  margin:auto;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+nav ul li a{
+  text-decoration: none;
+  text-align: end;
+  margin:0px;
+  padding:0px;
+  font-size: 1.6rem;
+}
+.show-items{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+header img{
+  margin: auto;
+  display: block;
+  width:200px;
+}
+
+/*-------- FOOTER ---------*/
+footer{
+  border-top:1px solid #C2D1D9;
+  /* display:flex;
+  justify-content: center; */
+  margin-top:5px;
+  margin-top:5px;
+  text-align: center;
+}
+footer .sitefooter{
+  display:flex;
+  justify-content: center;
+
+}
+footer .sitefooter a, p{
+  margin:0;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+footer .noticefooter p{
+  margin:0;
+  color:var(--highlight2-color);
+  font-size: 1.2rem;
+}
+
+/*----------------------------------------*/
+/*             Home page                  */
+/*----------------------------------------*/
+
+/*-------- HERO ---------*/
+section.hero {
+  background-image: url("images/hero_mobile.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+section.hero p{
+  text-align: center;
+  color: var(--text-color);
+}
+
+/*-------- ABOUT ---------*/
+.about{
+  width:100%;
+  padding:5% ;
+}
+.about h2{
+  color:var(--highlight-color);
+}
+
+/*-------- BENEFIT ---------*/
+.benefits{
+  width:100%;
+}
+.benefits video{
+  width:100%;
+  margin:auto;
+}
+.benefits p{
+  margin: 0px;
+  padding:0px 10px 10px 10px;
+}
+.benefits h3{
+  color:var(--textsoft-color);
+  margin-top:10px;
+}
+.benefits .benefits_detail ul{
+  margin:0px 0px 30px 0px;
+}
+
+/*-------- TESTIMONIALS ---------*/
+.testimonials_detail{
+  background-color:var(--backhighlight-color);
+  border-radius:3%;
+  margin-bottom:20px;
+}
+.testimonials .testimonials_detail h3{
+  text-align: center;
+  margin-bottom: 3px;
+  color:var(--back-color);
+}
+.testimonials .testimonials_detail p{
+  margin: 0px;
+  padding:0px 10px 10px 10px;
+  color:var(--back-color);
+}
+.testimonials .testimonials_2 h3{
+  color:var(--highlight-color);;
+}
+
+/*-------- EXPERIENSES TABLE ---------*/
+ .experiences{
+  text-align: center;
+  padding:3%;
+}
+.experiences .content-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.experiences td,
+th {
+  padding: 1px;
+  background-color: var(--backhighlight-color);
+  color: var(--highlight-color);
+  border: #799ae0;
+}
+.experiences th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: var(--highlight2-color);
+  color: var(--backhighlight-color);
+}
+.experiences tfoot td {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+  background-color:var(--text-color);
+}
+
+/*----------------------------------------*/
+/*             Our Team page              */
+/*----------------------------------------*/
+.team h2{
+  text-align: center;
+  font-size: 3.6rem;
+  width:100%;
+  margin:auto;
+  color: var(--textsoft-color);
+}
+.team h3{
+  margin-top: 0px;
+  color: var(--text-color);
+  margin-bottom:2px;
+}
+.team img{
+  width:50%;
+}
+.team p{
+  margin-top:0px;
+}
+
+.team .team_1, .team_3style{
+  width:100%;
+  text-align: center;
+  letter-spacing: var(--unnamed-character-spacing-0);
+} 
+
+
+/*----------------------------------------*/
+/*           Contact Us page              */
+/*----------------------------------------*/
+.contactus h2{
+  text-align: center;
+  font-size: 3.6rem;
+  width:100%;
+  margin:auto;
+  color: var(--textsoft-color);
+}
+.contactus h3{
+  color:var(--text-color);
+}
+.contactus p{
+  font-size:1.6rem;
+  font-style: normal;
+}
+.contactus address{
+  color:var(--textsoft-color);
+}
+.contactus .google-map{
+  width:100%;
+  height:50vh;
+  margin-top:2%;
+  margin-bottom:3%;
+}
+
+.contactform form{
+  border-radius: 5px;
+  background-color:var(--highlight2-color);
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contactform-button {
+  display: flex;
+  justify-content: space-between;
+}
+.contactform-button input{
+  color: var(--backhighlight-color);
+  background-color: var(--highlight-color);
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+.label-required {
+  font-size: 0.8rem;
+  color: red;
+}
+input:required {
+  border: 1px solid red;
+}
+input[type="reset"] {
+  background-color:var(--textsoft-color);
+  color:var(--highlight2-color);
+}
+input[type="submit"] {
+  background-color:var(--highlight-color);
+  color:var(--basetext-color);
+}
+input[type="reset"]:hover {
+  background-color:var(--highlight2-color);
+  color:var(--basetext-color);
+  transform: scale(1.3,1.3);
+}
+input[type="submit"]:hover {
+  background-color: var(--backhighlight-color);
+  color:var(--back-color);
+  transform: scale(1.3,1.3);
+}
+
+
+
+/*-------- LARGE DEVICES (desktops, 1200px and up) ---------*/
+@media only screen and (min-width: 1200px) {
+  .content-width {
+    width: 1150px;
+  }
+  
+  h1 {
+    font-size: 6.8rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  p, td, th{
+    font-size: 2.2rem;
+  }
+
+  nav {
+    width:100%;
+    padding-top: 0px;
+  }
+  nav .wrapper{
+    width:100%;
+  }
+  nav .toggle {
+    display: none;
+  }
+  nav ul{
+    display: flex;
+    justify-content:center;
+  }
+  nav ul li a{
+    padding: 10px;
+    font-size: 2.4rem;
+    margin:auto;
+  }
+
+/*----------------------------------------*/
+/*             Home page                  */
+/*----------------------------------------*/
+ /* LARGE HERO */
+  section.hero {
+    background-image: url("images/hero_large.png");
+    background-size: 100% 100%;
+    /* min-height: 50vh; */
+    background-size:100%; 
+    height: initial; 
+  }
+  section.hero p{
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  
+
+  /* LARGE BENEFITS */
+  .benefits{
+    display:flex;
+    flex-direction: column;
+  }
+  .benefits .benefits_2{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    margin-right: 5px;
+  }
+  .benefits .benefits_2 .benefits_detail{
+    width: calc(100%/3);
+  }
+  .benefits .benefits_2 .benefits_detail h3{
+    font-size: 2.0rem;
+  }
+  .benefits ul li{
+    font-size: 2.0rem;
+  }
+  .benefits .video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .benefits .video-container video{
+    width:50%;
+  }
+
+  /* EXPERIENSES TABLES */
+  .experiences table {
+    width: 80%;
+  }
+
+  /* LARGE TESTIMONIALS */
+  .testimonials{
+    display:flex;
+    flex-direction: column;
+  }
+  .testimonials .testimonials_2{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+  }
+  .testimonials .testimonials_2 .testimonials_detail{
+    width: calc(100%/2 - 20px);
+    margin:10px;
+  }
+
+
+/*----------------------------------------*/
+/*             Our Team page              */
+/*----------------------------------------*/
+  .team{
+    width:95%;
+  }
+
+  .team .team_1 p{
+    width:95%;
+    padding-left:15%;
+    padding-right:15%;
+  }
+  .team .team_3style{
+    text-align: center;
+    letter-spacing: var(--unnamed-character-spacing-0);
+  }
+  .team .team_3style img{
+    width:50%;
+  }
+  .team .team_3style h3{
+    margin-bottom:0px;
+  }
+  .team .team_3style p{
+    margin-top:0px;
+    padding-left:3%;
+    padding-right:3%;
+  }
+
+  .team .team_3style .teamstyle1, .teamstyle2{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .team .team_3style .team_2, .team_3{
+    flex: 1;
+    background-color: var(--textsoft-color);
+    color: var(--highlight-color);
+    margin:10px;
+    width:50%;
+    border-radius: 5%;
+  }
+
+  /*----------------------------------------*/
+  /*             Contact Us page            */
+  /*----------------------------------------*/ 
+  .contactall{
+    display:flex;
+    flex-wrap:wrap;
+  } 
+  .contactaddress{
+    width:45%;
+    flex:1;
+    margin-right:10px;
+  }
+  .contactform{
+    width:45%;
+    flex:1;
+    margin-left:10px;
+  }
+
+}

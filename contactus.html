@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Nicole Cahoon CPA | Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Add google font links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add font-awesome icon link -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      function showNav() {
+        var element = document.getElementById("nav-items");
+        element.classList.toggle("show-items");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- nav area -->
+    <header>
+      <img src="./images/logo.png" alt="Logo" />
+      <nav>
+        <div class="wrapper">
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"> MENU</i></a
+          >
+          <ul id="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./ourteam.html">About Our Team</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content-width contactus">
+        <h2>Contact Us</h2>
+        <div class="contactall">
+          <div class="contactaddress">
+            <h3>Address</h3>
+            <p>
+              For more information, or to book an appointment contact us today!
+            </p>
+            <address>
+              <p>Phone:12508711121</p>
+              <p>Email:Nicole@nicolecahoon.com</p>
+              <p>Address:350 17th St, Courtenay, BC V9N 1Y4</p>
+            </address>
+            <iframe
+              class="google-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2581.455431878542!2d-124.99099209999997!3d49.683395800000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54881477e93cdeb3%3A0xf1de24315ceda0d2!2s350%2017th%20St%2C%20Courtenay%2C%20BC%20V9N%201Y4!5e0!3m2!1sen!2sca!4v1732433850785!5m2!1sen!2sca"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contactform">
+            <h3>Contact Form</h3>
+            <form method="post">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ex: Sara"
+              />
+              <label for="lname"
+                >Last Name<span class="label-required">
+                  * (required)</span
+                ></label
+              >
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Ex: Smith"
+                required
+              />
+              <label for="email"
+                >Email <span class="label-required"> * (required)</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ex: mike@yahoo.com"
+                required
+              />
+              <label for="service">Your interesting</label>
+              <select id="service" name="service">
+                <option disabled selected value>-- select a service --</option>
+                <option value="accounting">Accounting Services</option>
+                <option value="consulting">Business Consulting Services</option>
+                <option value="tax">Tax Services</option>
+                <option value="others">Others</option>
+              </select>
+
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Please tell us a little about your enquiry"
+                style="height: 200px"
+              ></textarea>
+
+              <div class="contactform-button">
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER area -->
+    <footer>
+      <div class="sitefooter">
+        <p>&copy; 2024 Nicole Cahoon CPA |</p>
+        <a href="https://www.facebook.com/nicolecahooninc"
+          ><i class="fa-brands fa-facebook fa"></i
+        ></a>
+      </div>
+      <div class="noticefooter">
+        <p>
+          This is a fictional website that was designed and coded as an
+          educational exercise. It is not intended to be seen outside of the
+          class environment. None of the content and images were approved by the
+          business owner.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
