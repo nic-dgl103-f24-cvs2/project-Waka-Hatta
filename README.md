@@ -18,64 +18,65 @@ Change the page color scheme to match the AdobeColor-Business Casual color palet
 ○	Contact
 
 ## Hero Section
-●	Heading: “We are your trusted business consultants.”
+●	Heading: “Nicole Cahoon CPA”
 ●	Image: Our current image makes us look like a fashion or design company, so we are changing it to be more like a business consultancy.
 
 ## About Section
+●	Heading: “Nicole Cahoon CPA”
+●	Paragraph: Describe the specifics of our business
+
+## Benefits Section
 ●	Heading: “Services”
 ●	Paragraph: Describe the specifics of our business
 〇Comox Valley Accounting Services
 〇Business Consulting Services
 〇Tax Services
 
-## Benefits Section
-●	Heading: “Why Choose Us?”
-●	List of 3 Reasons Why Our Company is the Best:
-1.	Corporate Year Ends – Financial Statements Preparation.
-2.	Cash Flow Analysis.
-3.	Bookkeeping services.
+## Service Experiences Section
+●	Heading: “Service Experiences”
+●	Table: Show service experiences
+〇Job Title
+〇Years of Experience
+〇Job Description
 
 ## Testimonials Section
 ●	Heading: “Customer testimonials”
-●	List of 6 Testimonials:
+●	List of 4 Testimonials:
 ○	Name
 ○	Company name
 ○	The detail of the testimonial
 
-## Call-to-Action
-●	Heading: “Let us help your business.”
-●	Link to Contact Page: "Get in Touch"
-
 ## Footer
 ●Copyright 2024
-●WordPress Link :Powered by WordPress
-●themeszen Link :themeszenuncover theme by themeszen
+●facebook link
 ________________________________________
 2. About Us Page
 
 ## Header
 ●	Same as on the Home Page
-Small Hero Section
-●	Heading: “About Us”
-The Team Section
-●	Heading: “Meet the Team”
-●	Cards for Each Team Member (Each Card Includes):
+●	Heading: “About Our Team”
+●	Each Team Member:
 ○	Name
-○	Job Title
 ○	Image of the team member
+○	detail
 Footer
 ●	Same as on Home Page
-
 ________________________________________
 3. Contact Us Page
 Header
 ●	Same as on the Home Page
-Small Hero Section
 ●Heading: “Contact Us”
 〇Phone Number
 〇E-mail address
 〇Address
 ●Google map
-〇facebook link
+●Contact Form
+〇First Name
+〇Last Name
+〇Email
+〇Your interesting
+〇Message
+〇Reset button--Clear input controls
+〇Submit button--Not working
 Footer
 ●	Same as on Home Page
