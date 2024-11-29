@@ -10,11 +10,12 @@ html {
 :root {
   --text-color: #ba9b65;
   --textsoft-color:#f4efdc;
+  --texthighlight-color:yellow;
   --highlight-color:#365fb7;
   --highlight2-color:#799ae0;
-  --basetext-color: #ffffff;
+  --basetext-color: white;
   --back-color: #133463;
-  --backhighlight-color: #ffffff;
+  --backhighlight-color: white;
 }
 
 body {
@@ -109,8 +110,6 @@ header img{
 /*-------- FOOTER ---------*/
 footer{
   border-top:1px solid #C2D1D9;
-  /* display:flex;
-  justify-content: center; */
   margin-top:5px;
   margin-top:5px;
   text-align: center;
@@ -118,7 +117,6 @@ footer{
 footer .sitefooter{
   display:flex;
   justify-content: center;
-
 }
 footer .sitefooter a, p{
   margin:0;
@@ -127,9 +125,10 @@ footer .sitefooter a, p{
 }
 footer .noticefooter p{
   margin:0;
-  color:var(--highlight2-color);
+  color:var(--text-color);
   font-size: 1.2rem;
 }
+
 
 /*----------------------------------------*/
 /*             Home page                  */
@@ -137,7 +136,7 @@ footer .noticefooter p{
 
 /*-------- HERO ---------*/
 section.hero {
-  background-image: url("images/hero_mobile.jpg");
+  background-image: url("image/hero_mobile.jpg");
   background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -218,7 +217,7 @@ th {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
-  background-color: var(--highlight2-color);
+  background-color: var(--highlight-color);
   color: var(--backhighlight-color);
 }
 .experiences tfoot td {
@@ -226,17 +225,17 @@ th {
   font-style: italic;
   text-align: center;
   background-color:var(--text-color);
+  color:var(--back-color);
 }
 
 /*----------------------------------------*/
 /*             Our Team page              */
 /*----------------------------------------*/
-.team h2{
-  text-align: center;
-  font-size: 3.6rem;
+.team h1{
   width:100%;
+  font-weight:bold;
   margin:auto;
-  color: var(--textsoft-color);
+  text-align: center;
 }
 .team h3{
   margin-top: 0px;
@@ -260,15 +259,11 @@ th {
 /*----------------------------------------*/
 /*           Contact Us page              */
 /*----------------------------------------*/
-.contactus h2{
-  text-align: center;
-  font-size: 3.6rem;
+.contactus h1{
   width:100%;
+  font-weight:bold;
   margin:auto;
-  color: var(--textsoft-color);
-}
-.contactus h3{
-  color:var(--text-color);
+  text-align: center;
 }
 .contactus p{
   font-size:1.6rem;
@@ -286,7 +281,7 @@ th {
 
 .contactform form{
   border-radius: 5px;
-  background-color:var(--highlight2-color);
+  background-color:var(--highlight-color);
   padding: 20px;
   width: 100%;
   margin: 0 auto;
@@ -321,28 +316,28 @@ input[type="email"] {
   resize: vertical;
 }
 .label-required {
-  font-size: 0.8rem;
-  color: red;
+  font-size: 1.4rem;
+  color: var(--texthighlight-color);
 }
 input:required {
-  border: 1px solid red;
+  border: 1px solid var(--text-color);
 }
 input[type="reset"] {
-  background-color:var(--textsoft-color);
-  color:var(--highlight2-color);
+  background-color:var(--text-color);
+  color:var(--back-color);
 }
 input[type="submit"] {
-  background-color:var(--highlight-color);
-  color:var(--basetext-color);
+  background-color:var(--textsoft-color);
+  color:var(--back-color);
 }
 input[type="reset"]:hover {
-  background-color:var(--highlight2-color);
-  color:var(--basetext-color);
+  background-color:var(--text-color);
+  color:var(--highlight-color);
   transform: scale(1.3,1.3);
 }
 input[type="submit"]:hover {
-  background-color: var(--backhighlight-color);
-  color:var(--back-color);
+  background-color:var(--textsoft-color);
+  color:var(--highlight-color);
   transform: scale(1.3,1.3);
 }
 
@@ -392,9 +387,8 @@ input[type="submit"]:hover {
 /*----------------------------------------*/
  /* LARGE HERO */
   section.hero {
-    background-image: url("images/hero_large.png");
+    background-image: url("image/hero_large.png");
     background-size: 100% 100%;
-    /* min-height: 50vh; */
     background-size:100%; 
     height: initial; 
   }
@@ -461,6 +455,9 @@ input[type="submit"]:hover {
   .team{
     width:95%;
   }
+  .team h1{
+    font-size: 5.4rem;
+  }
 
   .team .team_1 p{
     width:95%;
@@ -499,6 +496,9 @@ input[type="submit"]:hover {
   /*----------------------------------------*/
   /*             Contact Us page            */
   /*----------------------------------------*/ 
+  .contactus h1{
+    font-size: 5.4rem;
+  }
   .contactall{
     display:flex;
     flex-wrap:wrap;
